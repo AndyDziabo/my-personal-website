@@ -2,10 +2,40 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
-    <title>My Personal Website</title>
+    <title>Andy Dziabo</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+     <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openInfo(event, 'Home')" id="defaultOpen">Home</button>
+        <button class="tablinks" onclick="openInfo(event, 'Contact')">Contact</button>
+        <button class="tablinks" onclick="openInfo(event, 'News')">News</button>
+        <button class="tablinks" onclick="openInfo(event, 'About')">About</button>
+    </div>
+  
+    <!-- Tab content -->
+    <div id="Home" class="tabcontent">
+        <h3>Home</h3>
+        <p>Welcome to Andy Dziabo's Page :)</p>
+    </div>
+  
+    <div id="Contact" class="tabcontent">
+        <h3>Contact</h3>
+        <p>
+            My Email Address<br>
+            <a href="mailto:jameszabo@yahoo.com">jameszabo@yahoo.com</a>
+        </p>
+    </div>
+  
+    <div id="News" class="tabcontent">
+        <h3>News</h3>
+        <p>I am currently finishing up my prework to start classes at Flatiron School for Software Engineering.</p>
+    </div>
+
+    <div id="About" class="tabcontent">
+        <h3>About</h3>
+        <p>My About Page</p>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
